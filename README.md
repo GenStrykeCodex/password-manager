@@ -17,10 +17,11 @@ Current feature:
 - **Random Password Generator**  
   Generates secure passwords with user-defined length between 8 and 32 characters, using letters, digits, and symbols.
 
-These are yet to be added:
-
 - **Password Storage**  
   Saves passwords locally with associated account names or services.
+
+
+These are yet to be added:
 
 - **Password Management**  
   View, edit, or delete stored passwords.
