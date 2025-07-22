@@ -1,0 +1,5 @@
+Password Manager v0.1 Beta:
+
+    - Random password generator
+    - User can specify the length
+    - Length should be between 8 and 32
