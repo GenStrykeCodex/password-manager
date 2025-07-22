@@ -14,18 +14,23 @@ def application_home():
     print("1. Generate Password")
     print("2. Store Password")
     print("3. View Stored Passwords")
-    print("4. Exit")
-    while True:
-        choice = input("Please choose an option (1-4): ")
+    print("4. Edit or Delete Passwords")
+    print("5. Exit")
+    while True:     #this loop will keep the application running until the user chooses to exit
+        choice = input("Please choose an option (1-4): ")       #the user is prompted to choose an option
         if choice == '1':
+            # Generate a password
             ask_command()
             application_home()
         elif choice == '2':
+            # Store a password
             Service = input("Enter the name of the service or account: ")
             password = input("Enter the password you want to store: ")
             password_storage(password, Service)
             application_home()
         elif choice == '3':
+            # View stored passwords
+            print("Retrieving stored passwords...")
             try:
                 with open("passwords.txt", "r") as file:
                     passwords = file.readlines()
@@ -38,10 +43,17 @@ def application_home():
             except FileNotFoundError:
                 print("No passwords stored yet.")
             application_home()
+
         elif choice == '4':
+            # Edit or delete passwords
+            print("This feature is under development. Please check back later.")
+            application_home()
+            
+        elif choice == '5':
+            # Exit the application
             print("Exiting the Password Manager. Goodbye!")
             break
-        else:
+        else:           # If the user enters an invalid choice
             print("Invalid choice. Please try again.")
     print("Thank you for using the Password Manager!")
 
@@ -56,9 +68,9 @@ def ask_command():
             if 8 <= length <= 32:       #check if length is within the valid range
                 print(f'The length of your password is {length}')
                 break
-            else:
+            else:            # If the length is not within the valid range
                 print("Your password length is either too short or too long. Try again")
-        else:
+        else:           # If the input is not a digit
             print("Enter a valid number.")
     
     print('Generating the password........')
