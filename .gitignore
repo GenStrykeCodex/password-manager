@@ -24,3 +24,6 @@ venv/
 htmlcov/
 *.cover
 *.log
+
+# Credential files
+passwords.txt
