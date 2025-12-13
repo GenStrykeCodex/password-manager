@@ -17,7 +17,7 @@ def application_home():
     print("4. Edit or Delete Passwords")
     print("5. Exit")
     while True:     #this loop will keep the application running until the user chooses to exit
-        choice = input("Please choose an option (1-4): ")       #the user is prompted to choose an option
+        choice = input("Please choose an option (1-5): ")       #the user is prompted to choose an option
         if choice == '1':
             # Generate a password
             ask_command()

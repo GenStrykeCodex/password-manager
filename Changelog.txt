@@ -1,3 +1,10 @@
+Password Manager v0.31 Beta (13 December 2025):
+
+Fixed a small text error in menu which read "Please choose an option (1-4):" instead of (1-5).
+Working on:
+    - Editing and deleting passwords
+
+
 Password Manager v0.245 Beta (22 July 2025):
 
 New Features Added
