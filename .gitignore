@@ -1,29 +1,21 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
+# Byte-compiled / optimized files
+**pycache**/
 *.py[cod]
 *$py.class
 
-# Virtual environment
+# Virtual environments
 venv/
 .env/
+.venv/
 
-# Environment variables
-.env
-*.env
-
-# VS Code settings
+# IDE / Editor files
+.idea/
 .vscode/
+*.swp
 
-# macOS files
+# OS-specific files
 .DS_Store
+Thumbs.db
 
-# Pytest
-.cache/
-
-# Coverage reports
-htmlcov/
-*.cover
+# Logs (if added later)
 *.log
-
-# Credential files
-passwords.txt
